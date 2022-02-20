@@ -1,0 +1,27 @@
+.hide-icon {
+  animation: hide 1000ms linear forwards;
+  transform: translate3d(0, 0, 0);
+}
+
+.show-icon {
+  animation: show 1000ms linear forwards;
+  transform: translate3d(0, -100px, 0);
+}
+
+@keyframes hide {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 100px, 0);
+  }
+}
+
+@keyframes show {
+  from {
+    transform: translate3d(0, -100px, 0);
+  }
+  to {
+    transform: translate3d(0, 0px, 0);
+  }
+}
